@@ -1,0 +1,139 @@
+<style>
+  /* Basic CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+    /* Header styles */
+  header {
+    background-color: #2d2d66;
+    color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .banner {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  /* Body styles */
+  body {
+    background-image: url('logo.png');
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    background-position: center;
+  }
+
+  /* Content styles */
+  .content {
+    background-image: url('banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 23px;
+    padding: 90px;
+    text-align: right;
+    color: #ddd; /* Set text color for better readability */
+    font-family: Arial, Helvetica, sans-serif; /* Set your preferred font stack */
+    background-color: #2d2d66;
+}
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .banner {
+      font-size: 20px;
+    }
+  }
+  /* Style for the navigation menu */
+  .menu {
+    list-style: none;
+    padding: 0;
+    width: 300px; /* Adjust width as needed */
+    background-color: rgba(45, 45, 102, 0.85);
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ddd;
+  }
+
+  .menu li {
+    border-bottom: 3px solid #66215b;
+    position: relative;
+  }
+
+  .menu li:last-child {
+    border-bottom: 3px;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ddd;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .menu li a:hover {
+    background-color: #2d2d66;
+  }
+
+  /* Submenu styles */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position the submenu to the right */
+    color:  rgba(45, 45, 102, 0.85);
+    width: 280px; /* Adjust width as needed */
+    margin-top: 15px; /* Add spacing between main menu and submenu */
+  }
+
+  .submenu li {
+    position: relative;
+    padding-left: 30px; /* Space for the bullet */
+}
+
+.submenu li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; /* Adjust to vertically center the icon */
+    transform: translateY(-50%);
+    width: 30px; /* Adjust width and height based on your icon size */
+    height: 30px;
+    background-image: url('symbol.png');
+    background-size: cover; /* Ensures the icon fills the box */
+}
+
+  .menu li:hover .submenu {
+    display: block; /* Show submenu on hover */
+    background-color: rgba(45, 45, 102, 0.85)
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Gap between columns */
+}
+
+.column {
+    padding: 10px;
+    background-color: #8366ad;
+    border: 1px solid #ccc;
+}
+
+.column img {
+  max-width: 100%; /* Ensure images don't exceed column width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below images */
+  margin-bottom: 5px; /* Optional: Add space below images */
+}
+</style>
