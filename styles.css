@@ -55,7 +55,7 @@
     padding: 0;
     width: 300px; /* Adjust width as needed */
     background-color: rgba(45, 45, 102, 0.85);
-    margin-top: 10px;
+    margin-top: 25px;
     text-align: center;
     font-weight: bold;
     color: #ddd;
@@ -93,7 +93,7 @@
     left: 100%; /* Position the submenu to the right */
     color:  rgba(45, 45, 102, 0.85);
     width: 280px; /* Adjust width as needed */
-    margin-top: 15px; /* Add spacing between main menu and submenu */
+    margin-top: 0; /* Add spacing between main menu and submenu */
   }
 
   .submenu li {
