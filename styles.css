@@ -92,7 +92,7 @@
     top: 0;
     left: 100%; /* Position the submenu to the right */
     color:  rgba(45, 45, 102, 0.85);
-    width: 295px; /* Adjust width as needed */
+    width: 290px; /* Adjust width as needed */
     margin-top: 0; /* Add spacing between main menu and submenu */
   }
 
