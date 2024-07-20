@@ -92,7 +92,7 @@
     top: 0;
     left: 100%; /* Position the submenu to the right */
     color:  rgba(45, 45, 102, 0.85);
-    width: 280px; /* Adjust width as needed */
+    width: 250px; /* Adjust width as needed */
     margin-top: 0; /* Add spacing between main menu and submenu */
   }
 
@@ -118,6 +118,43 @@
     background-color: rgba(45, 45, 102, 0.85)
   }
 
+  /* Submenu1 styles */
+  .submenu1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position the submenu to the right */
+    color:  rgba(45, 45, 102, 0.85);
+    width: 250px; /* Adjust width as needed */
+    margin-top: 0; /* Add spacing between main menu and submenu */
+  }
+
+  .submenu1 li {
+    position: relative;
+    padding-left: 30px; /* Space for the bullet */
+}
+
+.submenu1 li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%; /* Adjust to vertically center the icon */
+    transform: translateY(-50%);
+    width: 30px; /* Adjust width and height based on your icon size */
+    height: 30px;
+    background-image: url('symbol.png');
+    background-size: cover; /* Ensures the icon fills the box */
+}
+
+  .menu ul li:hover .submenu1 {
+    display: block; /* Show submenu on hover */
+    background-color: rgba(45, 45, 102, 0.85)
+  }
+
+  ul li:hover > ul {
+    display: block; /* Show nested ul on hover */
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
@@ -125,7 +162,7 @@
 }
 
 .column {
-    padding: 10px;
+    padding: 5px;
     background-color: #8366ad;
     border: 1px solid #ccc;
 }
@@ -134,6 +171,5 @@
   max-width: 100%; /* Ensure images don't exceed column width */
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove any extra space below images */
-  margin-bottom: 5px; /* Optional: Add space below images */
 }
 </style>
