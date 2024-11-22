@@ -54,15 +54,20 @@
     list-style: none;
     padding: 0;
     width: 300px; /* Adjust width as needed */
-    background-color: rgba(45, 45, 102, 0.85);
+    background-color: rgba(45, 45, 102, 1);
     margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
     font-weight: bold;
-    color: #ddd;
+    color: #fff;
+    background-image: url('poster1.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #2d2d66;
   }
 
   .menu li {
-    border-bottom: 3px solid #66215b;
+    border-bottom: 1px dotted #ddd;
     position: relative;
   }
 
@@ -74,7 +79,7 @@
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #ddd;
+    color: #fff;
     transition: background-color 0.3s;
     text-align: center;
     font-weight: bold;
@@ -83,6 +88,7 @@
 
   .menu li a:hover {
     background-color: #2d2d66;
+    color: #fff;
   }
 
   /* Submenu styles */
@@ -94,6 +100,10 @@
     color:  rgba(45, 45, 102, 0.85);
     width: 290px; /* Adjust width as needed */
     margin-top: 0; /* Add spacing between main menu and submenu */
+    background-image: url('poster1.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #2d2d66;
   }
 
   .submenu li {
@@ -127,6 +137,10 @@
     color:  rgba(45, 45, 102, 0.85);
     width: 230px; /* Adjust width as needed */
     margin-top: 0; /* Add spacing between main menu and submenu */
+    background-image: url('poster1.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #2d2d66;
   }
 
   .submenu1 li {
@@ -156,9 +170,12 @@
 }
 
 .container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 20px; /* Gap between columns */
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 .column {
@@ -167,9 +184,11 @@
     border: 1px solid #ccc;
 }
 
+
 .column img {
   max-width: 100%; /* Ensure images don't exceed column width */
-  height: auto; /* Maintain aspect ratio */
+  height: 360px; /* Maintain aspect ratio */
   display: block; /* Remove any extra space below images */
 }
+
 </style>
