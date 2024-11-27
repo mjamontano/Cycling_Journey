@@ -100,7 +100,7 @@
     color:  rgba(45, 45, 102, 0.85);
     width: 290px; /* Adjust width as needed */
     margin-top: 0; /* Add spacing between main menu and submenu */
-    background-image: url('poster1.png');
+    background-image: url('poster.png');
     background-size: cover;
     background-position: center;
     border: 5px solid #2d2d66;
@@ -137,7 +137,7 @@
     color:  rgba(45, 45, 102, 0.85);
     width: 230px; /* Adjust width as needed */
     margin-top: 0; /* Add spacing between main menu and submenu */
-    background-image: url('poster1.png');
+    background-image: url('poster.png');
     background-size: cover;
     background-position: center;
     border: 5px solid #2d2d66;
@@ -172,23 +172,30 @@
 .container {
     display: flex;
     flex-direction: row;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 200px;
-    align-items: center;
+    <!--grid-template-columns: repeat(2, 1fr); /* Three equal columns */-->
+    gap: 300px;
     justify-content: center;
+    align-items: center;
 }
 
 .column {
-    padding: 5px;
-    background-color: #8366ad;
-    border: 1px solid #ccc;
+    padding:6px;
+    background-color: rgba(45, 45, 102, 0.75);
+    border: 5px solid #2d2d66;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Vertically center */
 }
 
 
 .column img {
   max-width: 100%; /* Ensure images don't exceed column width */
-  height: 360px; /* Maintain aspect ratio */
-  display: block; /* Remove any extra space below images */
+  height: 350px; /* Maintain aspect ratio */
+  display: flexbox; /* Remove any extra space below images */
+  flex-direction:row-reverse;
+  text-align: center; /* Vertically center */
+  justify-content: center;
+  align-items: center; /* Horizontally center */
 }
 
 </style>
